@@ -1,0 +1,71 @@
+
+h1 {
+    text-align: center;
+}
+
+/* body style */
+body {
+  background-color: lightblue;
+}
+
+#p1{
+    text-align: justify;
+}
+
+#p2 {
+    text-align: left;
+  border-style: solid;
+  background-color: white;
+  border-color: green;
+    width: 900px; 
+    height: auto;
+    padding: 15px;
+}
+
+#p4{
+    color : white;
+    background-color: blue;
+}
+#p5{
+    color : white;
+    background-color: blue;
+}
+
+
+#p6 a { 
+    
+     color: red
+
+}
+
+
+table{
+    width: 700px;
+    height: auto;
+    
+}
+
+table, th,td{
+
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: lightgrey;
+}
+
+th, td{
+    padding: 10px;
+}
+td{
+    background-color: white;
+}
+
+.two-digit {
+  list-style-type: decimal-leading-zero;
+
+}
+.two-digit a {
+  color: blue;
+}
