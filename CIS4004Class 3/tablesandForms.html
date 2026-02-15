@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Game Table</title>
+
+
+
+<style> 
+ table, th, td {
+  border: 3px double black
+
+}
+
+</style>
+</head>
+
+
+<body> 
+	<h1><b> Pizza Ordering Form </b></h1>
+
+
+<h2> <b> Contact Information</b></h2>
+
+<form>
+  Name: <input type="text" name="fname" required> <br>
+  Phone: <input type="tel" id="phone" name="phone" required><br>
+  Email: <input type="email" name="email" required> <br>
+
+
+
+<h3> Select Pizza Size </h3>
+
+
+ Pizza Size: <label for="size"></label>
+  <select name="size" id="size" required>
+    <option value="">-- Select a size --</option>
+    <option value="M">Medium</option>
+    <option value="L">Large</option>
+    <option value="XL">Extra Large</option>
+  </select>
+  <br><br>
+
+
+
+<h4> Select Sauce </h4>
+<input type="radio" id="marinara" name="fav_language" value="Marinara" required>
+  <label for="marinara">Marinara</label><br>
+
+  <input type="radio" id="ranch" name="fav_language" value="Ranch">
+  <label for="ranch">Ranch</label><br>
+
+  <input type="radio" id="no sauce" name="fav_language" value="No Sauce">
+  <label for="no sauce">No Sauce</label><br>
+
+
+
+<h5>  Select Toppings </h5>
+<input type="checkbox" id="topping" name="topping" value="Meat">
+  <label for="topping"> Pepperoni</label>
+
+  <input type="checkbox" id="topping" name="topping" value="Meat">
+  <label for="topping"> Sausage</label><br>
+
+  <input type="checkbox" id="topping" name="topping" value="Veggies">
+  <label for="topping"> Mushroom</label>
+
+ <input type="checkbox" id="topping" name="topping" value="fruit">
+  <label for="topping"> Pineapple</label><br>
+
+    <input type="checkbox" id="topping" name="topping" value="Veggies">
+  <label for="topping"> Peppers</label>
+
+  <input type="checkbox" id="topping" name="topping" value="Veggies">
+  <label for="topping"> Onions</label> <br><br>
+
+<h> <b> Additional Instructions</b></h><br><br>
+
+<label for="instructions">Additional Instructions</label><br>
+<textarea id="instructions" name="instructions" rows="3" cols="20">
+Add instructions
+</textarea><br>
+
+ <input type="submit" value="Submit">
+
+
+</form>
+
+
+
+
+
+
+   <p> List of My Favorite Games</p>
+<table> 
+
+  <tr>
+    <th>Developer</th>
+    <th>Title</th> 
+    <th>Year</th>
+  </tr>
+  
+  <tr>
+    <td rowspan = "3"> Bungie</td>
+	<td>Halo</td>
+	<td>2001</td>
+  </tr>
+    <tr>
+	<td>Halo 2 </td>
+	<td>2004</td>
+  </tr>
+  
+<tr>
+	<td>Halo 3</td>
+	<td>2007</td>
+  </tr>
+	
+  <tr>
+    <td>Mojang</td>
+    <td>Minecraft</td> 
+    <td>2011</td>
+  </tr>
+
+  <tr>
+    <td colspan = "4"> Count: 4 </td>
+  </tr>
+
+</table>
+
+
+</body>
+</html>
