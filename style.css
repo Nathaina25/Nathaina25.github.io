@@ -1,156 +1,145 @@
-
-@media screen and (min-width: 992px) {
-    container article{
-      font-size: 20px;
+@media screen and (max-width: 600px) {
+    body.resume-page {
+        padding: 0; 
+        background-color: white; 
     }
-  
-  }
-
-
-  a[href*="google.com"]::after {
-    content: "";
-    display: inline-block;
-    width: 12px;  
-    height: 12px;
-    margin-left: 5px;
-    
-    
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/64/Icon_External_Link.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    vertical-align: middle;
-}
-
-article p:first-of-type::first-letter {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 36px;
-    float: left; 
-    margin-right: 8px;
 }
 
 
-#thanks {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    width: 200px;
-    height: 60px;
-    background-color: lightblue;
-    border: 3px solid black;
-    color: black;
+.welcome-theme {
+    background-color: pink;
+}
+
+.welcome-theme #welcome {
     text-align: center;
+}
+
+/* theme color for the welcome page*/ 
+.welcome-theme a:link { color: red; }
+.welcome-theme a:visited { color: blue; }
+.welcome-theme a:hover { color: hotpink; }
+.welcome-theme a:active { color: green; }
+
+
+/* for the resume now */
+
+body.resume-page {
+    background-color: #525659;
     display: flex;
-    align-items: center;
     justify-content: center;
-  }
-
-  header {
-    position: sticky;
-    top: 0;
-    background-color: red;
-    color: black;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 0;
-    z-index: 1000;
-    font-size: 36px;
-    border-bottom: 2px solid black;
-  }
-
-
-body {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin: 10;
-    font-family: "Times New Roman", Times, serif;
+    padding: 40px 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-  h1{
-    text-align: center;
-  }
 
-
-  #container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-
-  }
-
-  #container article{
-    width: 300px;
-    margin: 0 30px 20px 50px;
+.resume-theme {
     background-color: white;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    color: #000;
+
+}
+
+
+h1 {
     text-align: center;
-    color: rgba(211, 211, 211, 0.933);
-    min-height: 20px;
-    max-height: 400px;
-    transition: max-height 2s ease, color 2s ease;
-  }
-  
-  #container article:hover {
-    color:rgb(0, 0, 0);
-    max-height: 1000px;
-  }
+    margin: 0;
+    font-size: 24px;
+}
 
-  nav{
-    background-color: black;
-    width: 100px;
-    height: 100vh;
-    grid-template-rows: 4fr auto;
-    align-items: center;
-    padding-top: 20px;
-  }
+.contact-info {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 14px;
+    border-bottom: 1px solid #000; 
+    padding-bottom: 10px;
+}
 
-nav button{
-    display: block;
+
+.section-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+
+.row {
+    display: flex;
     flex-direction: column;
-    background-color: blue;
-    color: white;
-    width: 90%;
-    margin: 0;
-    padding: 10px 0;
-    flex: wrap;
-    cursor: pointer;
-  text-align: center;
-}
-
-#recentArticles{
-    width: 100px;
-    height: 100px;
-    transition: width 2s, height 4s, background-color 3s;
+    justify-content: space-between; 
+    align-items: flex-start;
+    font-size: 14px;
+    margin-bottom: 2px;
 }
 
 
-
-#jumpMenu {
-    display: none;           
-    position: relative;    
-    background-color: #fff;  
-    list-style: none;        
-    padding: 10px;
-    margin: 0;
-    border: 1px solid #ccc;
-    z-index: 100;          
+.bold {
+    font-weight: bold;
 }
 
-#menuItems:hover #jumpMenu {
-    display: block;
-    background-color: gold;
-    width: 80px;
-
+p, li {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 5px;
 }
 
-#jumpMenu li a{
-    display: block;
-    text-decoration: none;
-
-}
-
-#jumpMenu li a:hover{
-    background-color:blue;
-    color: lightblue;
+ul {
+    margin-top: 5px;
     padding-left: 20px;
+}
 
+a {
+    color: darkblue;
+    text-decoration: underline;
+}
+.resume-theme a:link { color: red; }
+.resume-theme a:visited { color: blue; }
+.resume-theme a:hover { color: hotpink; }
+.resume-theme a:active { color: green; }
+
+/* project 1 style*/
+
+.project-one-theme {
+    background-color: white; 
+}
+
+.project-one-theme h1 {
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+.project-one-theme h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* project 2 style*/
+.project-two-theme {
+    background-color: white; 
+}
+
+.project-two-theme h1 {
+    color: #2c3e50;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+.project-two-theme h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.project-two-theme img {
+    border: 5px solid black;
 }
