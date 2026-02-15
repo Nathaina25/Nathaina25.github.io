@@ -1,3 +1,10 @@
+@media screen and (max-width: 600px) {
+    body.resume-page {
+        padding: 0; 
+        background-color: white; 
+    }
+}
+
 
 .welcome-theme {
     background-color: pink;
@@ -28,12 +35,13 @@ body.resume-page {
 
 .resume-theme {
     background-color: white;
-    width: 8.5in;
-    min-height: 11in;
-    padding: 0.5in 0.7in;
+    width: 100%;
+    min-height: auto;
+    padding: 20px;
     box-sizing: border-box;
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: none;
     color: #000;
+
 }
 
 
@@ -63,10 +71,13 @@ h1 {
 
 .row {
     display: flex;
+    flex-direction: column;
     justify-content: space-between; 
+    align-items: flex-start;
     font-size: 14px;
     margin-bottom: 2px;
 }
+
 
 .bold {
     font-weight: bold;
@@ -110,10 +121,6 @@ a {
     margin-top: 20px;
 }
 
-
-.project-one-theme img {
-    border: 5px solid black;
-}
 
 /* project 2 style*/
 .project-two-theme {
