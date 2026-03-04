@@ -1,0 +1,71 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #add8e6; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+#displayArea { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 50px; 
+    border: 8px solid #d4af37; 
+    width: 450px;
+    min-height: 500px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+#pokemonInput {
+    padding: 5px;
+    border: 1px solid #999;
+}
+
+#searchBtn {
+    padding: 5px 15px;
+    background: #e0e0e0;
+    border: 1px solid #777;
+    color: black;
+    cursor: pointer;
+}
+
+#imageContainer img {
+    width: 150px;
+    height: 150px;
+}
+
+
+.grid-selectors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+select {
+    width: 100%;
+    padding: 5px;
+}
+
+#addToTeamBtn { 
+    cursor: pointer; 
+    background: #e0e0e0; 
+    color: black; 
+    border: 1px solid #777; 
+    padding: 5px 15px; 
+    border-radius: 3px;
+}
+
+.team-section {
+    margin-top: 30px;
+    width: 450px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+}
